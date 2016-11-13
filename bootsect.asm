@@ -48,12 +48,7 @@ SYSSEG	  = DEF_SYSSEG			; system loaded at 0x10000 (65536).
 ROOT_DEV = 0
 SWAP_DEV = 0
 
-jmp start
-nop
-
-
-
-start:
+_main:
 	mov	ax,BOOTSEG
 	mov	ds,ax
 	mov	ax,INITSEG
